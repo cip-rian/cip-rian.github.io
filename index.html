@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cip-rian (Professor)</title>
+    <title>Pionier Essen 1.11.2024</title>
     <style>
         body {
             display: flex;
@@ -12,100 +12,570 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #1e1e2f; /* Dark purple background */
+            background-color: #121212; /* Dark background */
             color: #f39c12; /* Bright orange text */
             font-family: 'Arial', sans-serif;
             text-align: center;
         }
+        #mainContent, #teamTable7, #teamTable9, #teamTable11, #teamTable13, #teamTable15, #teamTableR, #menuTable {
+            display: none;
+            margin-top: 20px;
+            background: rgba(34, 34, 34, 0.95); /* Dark background for tables */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
         h1 {
-            font-size: 4em; /* Larger font size */
+            font-size: 4em;
             margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for depth */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         h2 {
-            font-size: 2em; /* Larger font size */
-            color: #e67e22; /* Slightly different orange */
+            font-size: 2em;
+            color: #e67e22;
             margin: 0;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         .emojis {
-            font-size: 3em; /* Larger emoji size */
+            font-size: 3em;
             margin-top: 20px;
         }
-        #contactForm {
-            display: none;
+        .buttons-container {
+            display: flex;
+            gap: 10px;
             margin-top: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        input, textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
         }
         button {
             padding: 10px 15px;
-            background-color: #f39c12; /* Button color */
+            background-color: #f39c12;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 1em;
         }
-        button:disabled {
-            background-color: #ddd; /* Disabled button color */
+        #teamTable7, #teamTable9, #teamTable11, #teamTable13, #teamTable15, #teamTableR, #menuTable {
+            margin-top: 20px;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            background-color: #333; /* Dark gray for table background */
+        }
+        th, td {
+            border: 1px solid #555; /* Darker border color */
+            padding: 10px;
+            text-align: center;
+            color: #f39c12; /* Bright orange text */
+        }
+        th {
+            background-color: #222; /* Darker header background */
+            color: #f39c12;
+        }
+        td {
+            background-color: #444; /* Medium gray for table cells */
+        }
+        #passwordSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #passwordInput {
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1>Cip-rian (Professor)</h1>
-    <h2>coming soon...</h2>
-    <div class="emojis">
-        💻 📧 🖥️ 📚
+    <!-- Password Entry Section -->
+    <div id="passwordSection">
+        <h1>Passwort bitte:</h1>
+        <input type="password" id="passwordInput" placeholder="Enter password">
+        <button id="enterButton">Enter</button>
     </div>
-    <button id="contactButton">Contact Me</button>
-    <div id="contactForm">
-        <h3>Contact Form</h3>
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="text" id="surname" placeholder="Surname" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <textarea id="topic" placeholder="Topic" rows="4" required></textarea>
-        <button id="sendButton" disabled>Send</button>
+
+    <!-- Main Content -->
+    <div id="mainContent">
+        <h1>Pionier Essen 1.11.2024</h1>
+        <h2>Information</h2>
+        <div class="emojis">
+            🍰☕👀
+        </div>
+        <div class="buttons-container">
+            <button id="teamButton7">Team 7:00 AM</button>
+			<button id="teamButton9">Team 9:30 AM</button>
+			<button id="teamButton11">Team 11:00 AM</button>
+			<button id="teamButton13">Team 13:30</button>
+			<button id="teamButton15">Team 15:00</button>
+			<button id="teamButtonR">Team Reinigung</button>
+            <button id="menuButton">Menu</button>
+        </div>
+    </div>
+
+    <!-- Team Table 7:00AM-->
+    <div id="teamTable7">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows for "Team" Table -->
+                <tr>
+					<td rowspan="8">7:00 AM</td>			
+				</tr>
+				<tr>
+					<td>Huber Beate</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Vino</td>
+				</tr>
+				<tr>
+					<td>Subajini Sureshkumar</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+            </tbody>
+        </table>
+    </div>
+	
+	<!-- Team Table 9 -->
+    <div id="teamTable9">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+              				
+				<tr>
+					<td rowspan="10">9:30 AM</td>					
+				</tr>
+				<tr>
+					<td>Huber Beate</td>
+				</tr>
+				<tr>
+					<td>Aarshika Niranjan</td>
+				</tr>
+				<tr>
+					<td>Timotheus Niranjan</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Vino</td>
+				</tr>
+				<tr>
+					<td>Subajini Sureshkumar</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+				
+            </tbody>
+        </table>
+    </div>
+
+<!-- Team Table 11:00 AM -->
+    <div id="teamTable11">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+				<tr><td rowspan="17">11:00 AM</td>
+				</tr>
+				<tr>
+					<td>Achim Kraft</td>
+				</tr>
+				<tr>
+					<td>Huber Beate</td>
+				</tr>
+				<tr>
+					<td>Graßkamp Veronica</td>
+				</tr>
+				<tr>
+					<td>Aarshika Niranjan</td>
+				</tr>
+				<tr>
+					<td>Timotheus Niranjan</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Vino</td>
+				</tr>
+				<tr>
+					<td>Subajini Sureshkumar</td>
+				</tr>
+				<tr>
+					<td>Marina Macorig</td>
+				</tr>
+				<tr>
+					<td>Giovana Carbone</td>
+				</tr>
+				<tr>
+					<td>Dieter Borchert</td>
+				</tr>
+				<tr>
+					<td>Elke Borchert</td>
+				</tr>
+				<tr>
+					<td>Anja Steigels</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+
+            </tbody>
+        </table>
+    </div>
+
+<!-- Team Table 13:30 -->
+    <div id="teamTable13">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+               				
+				<tr>
+					<td rowspan="13">13:30</td>
+				</tr>
+				<tr>
+					<td>Huber Beate</td>
+				</tr>
+				<tr>
+					<td>Aarshika Niranjan</td>
+				</tr>
+				<tr>
+					<td>Timotheus Niranjan</td>
+				</tr>
+				<tr>
+					<td>Elke Borchert</td>
+				</tr>
+				<tr>
+					<td>Vino</td>
+				</tr>
+				<tr>
+					<td>Subajini Sureshkumar</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Marina Macorig</td>
+				</tr>
+				<tr>
+					<td>Giovana Carbone</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+			
+            </tbody>
+        </table>
+    </div>
+	
+	<!-- Team Table 15:00-->
+    <div id="teamTable15">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+                				
+				<tr>
+					<td rowspan="13">15:00</td>
+				</tr>
+                <tr>
+					<td>Dieter Borchert</td>
+				</tr>
+				<tr>
+					<td>Elke Borchert</td>
+				</tr>
+				<tr>
+					<td>Aarshika Niranjan</td>
+				</tr>
+				<tr>
+					<td>Timotheus Niranjan</td>
+				</tr>
+				<tr>
+					<td>Marina Macorig</td>
+				</tr>
+				<tr>
+					<td>Vino</td>
+				</tr>
+				<tr>
+					<td>Subajini Sureshkumar</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Salvo Guarneri</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+            </tbody>
+        </table>
+    </div>
+	
+	<!-- Team Table Reinigung-->
+    <div id="teamTableR">
+        <h3>Team Schedule</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th><img src="time.png" alt="Time"></th>
+                    <th><img src="who.png" alt="Who"></th>
+                    <th><img src="what.png" alt="What"></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+					<td rowspan="8">Reinigung</td>
+				</tr>
+				<tr>
+					<td>Reynold Xavier</td>
+				</tr>
+				<tr>
+					<td>Aarshika Niranjan</td>
+				</tr>
+				<tr>
+					<td>Timotheus Niranjan</td>
+				</tr>
+				<tr>
+					<td>Sara Guarneri</td>
+				</tr>
+				<tr>
+					<td>Salvo Guarneri</td>
+				</tr>
+				<tr>
+					<td>Natasa Picioreanu</td>
+				</tr>
+				<tr>
+					<td>Ciprian Picioreanu</td>
+				</tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Menu Table -->
+    <div id="menuTable">
+        <h3>Menu</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Type</th>
+                    <th>Contains 📝</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- "Menu" Table  -->
+                <tr><td>Lasagna</td><td>Käse, Fleisch ...</td></tr>
+                <tr><td>Pilsragú</td><td>Pils, reis ...</td></tr>
+				<tr><td>Sarmale</td><td>GLUTENFREI Fleisch, Kohl, Reis</td></tr>
+            </tbody>
+        </table>
     </div>
 
     <script>
-        // Show/hide the contact form
-        document.getElementById('contactButton').addEventListener('click', function() {
-            const form = document.getElementById('contactForm');
-            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+        // Password protection
+        document.getElementById('enterButton').addEventListener('click', function() {
+            const password = document.getElementById('passwordInput').value;
+            if (password === 'mgost1914') {
+                document.getElementById('passwordSection').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
         });
 
-        // Enable the send button only if all fields are filled
-        const inputs = document.querySelectorAll('#contactForm input, #contactForm textarea');
-        inputs.forEach(input => {
-            input.addEventListener('input', function() {
-                const allFilled = Array.from(inputs).every(input => input.value.trim() !== '');
-                document.getElementById('sendButton').disabled = !allFilled;
-            });
+        // Toggle Team Table, hiding Menu Table if open
+        document.getElementById('teamButton7').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTableR.style.display = 'none';
+            teamTable7.style.display = teamTable7.style.display === 'block' ? 'none' : 'block';
+        });
+		
+		document.getElementById('teamButton9').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable7.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTableR.style.display = 'none';
+            teamTable9.style.display = teamTable9.style.display === 'block' ? 'none' : 'block';
+        });
+		
+		document.getElementById('teamButton11').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable7.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTableR.style.display = 'none';
+            teamTable11.style.display = teamTable11.style.display === 'block' ? 'none' : 'block';
+        });
+		
+		document.getElementById('teamButton13').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable7.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTableR.style.display = 'none';
+            teamTable13.style.display = teamTable13.style.display === 'block' ? 'none' : 'block';
+        });
+		
+		document.getElementById('teamButton15').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable7.style.display = 'none';
+			teamTableR.style.display = 'none';
+            teamTable15.style.display = teamTable15.style.display === 'block' ? 'none' : 'block';
+        });
+		
+		document.getElementById('teamButtonR').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            menuTable.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTable7.style.display = 'none';
+            teamTableR.style.display = teamTableR.style.display === 'block' ? 'none' : 'block';
         });
 
-        // Handle sending the form data (this is just a placeholder)
-        document.getElementById('sendButton').addEventListener('click', function() {
-            const name = document.getElementById('name').value;
-            const surname = document.getElementById('surname').value;
-            const email = document.getElementById('email').value;
-            const topic = document.getElementById('topic').value;
-
-            // Example of sending email (you'll need to implement the server-side logic)
-            alert(`Email sent to aaaaaaaaa@gmail.com with the following details:\n\nName: ${name}\nSurname: ${surname}\nEmail: ${email}\nTopic: ${topic}`);
-            
-            // Reset form after sending
-            inputs.forEach(input => input.value = '');
-            document.getElementById('sendButton').disabled = true;
+        // Toggle Menu Table, hiding Team Table if open
+        document.getElementById('menuButton').addEventListener('click', function() {
+            const teamTable7 = document.getElementById('teamTable7');
+			const teamTable9 = document.getElementById('teamTable9');
+			const teamTable11 = document.getElementById('teamTable11');
+			const teamTable13 = document.getElementById('teamTable13');
+			const teamTable15 = document.getElementById('teamTable15');
+			const teamTableR = document.getElementById('teamTableR');
+            const menuTable = document.getElementById('menuTable');
+            teamTableR.style.display = 'none';
+			teamTable9.style.display = 'none';
+			teamTable11.style.display = 'none';
+			teamTable13.style.display = 'none';
+			teamTable15.style.display = 'none';
+			teamTable7.style.display = 'none';
+            menuTable.style.display = menuTable.style.display === 'block' ? 'none' : 'block';
         });
     </script>
 </body>
